@@ -1,0 +1,8 @@
+from django.conf.urls.defaults import *
+
+
+
+urlpatterns = patterns('asthma.apps.asthma_app.views',
+
+   url(r'^Message_log$','Message_log',name="asthma_app_Message_log"),
+   )

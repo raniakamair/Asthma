@@ -1,0 +1,10 @@
+[backend/att]: write: 'AT+CMGL=0\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: Polling modem for messages
+[backend/att]: write: 'AT\r'
+[router]: Caught KeyboardInterrupt
+[router]: Stopping...
+[backend/att]: debug: Disconnecting
+[backend/att]: read: '\r\r\n'
+[backend/att]: debug: Disconnecting

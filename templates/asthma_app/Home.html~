@@ -1,0 +1,142 @@
+{% load i18n %}
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+		<title>Home</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+
+
+<link type="text/css" rel="stylesheet" href="/static/rapidsms/stylesheets/layout.css" />
+<link type="text/css" rel="stylesheet" href="/static/rapidsms/stylesheets/splits.css" />
+<link type="text/css" rel="stylesheet" href="/static/rapidsms/stylesheets/modules.css" />
+<link type="text/css" rel="stylesheet" href="/static/rapidsms/stylesheets/tables.css" />
+<link type="text/css" rel="stylesheet" href="/static/rapidsms/stylesheets/forms.css" />
+<link type="text/css" rel="stylesheet" href="/static/rapidsms/stylesheets/icons.css" />
+
+
+
+<script type="text/javascript" src="/static/rapidsms/javascripts/jquery-1.3.2.min.js"></script>
+<script type="text/javascript" src="/static/rapidsms/javascripts/collapse.js"></script>
+
+<style type="text/css">
+	#inner {
+		margin: 4em 25%;
+	}
+
+	div.module div {
+		border: 1px solid #ddd;
+		border-top-color: #636363;
+		margin-top: -1px;
+	}
+
+	div.module p {
+		padding-left: 1em;
+		padding-right: 1em;
+	}
+
+	code, pre {
+		background: #ffe;
+	}
+
+	pre {
+		padding: 1em;
+		margin: 0;
+	}
+#f {
+		font-size: 12px;
+		
+	}
+p{font-family:"Times New Roman", Times, serif}
+#H {
+background-color:#837E7C;
+color:white;
+font-size: 24px;
+font-family:"Zapf Chancery", cursive
+}
+#b {
+
+font-size: 17px
+}
+</style>
+
+
+
+</head>
+       <body>
+
+
+<div id="wrapper">
+	
+
+			
+			<div id="header">
+				<div id="branding">
+					<h1>
+						<a title="welcome">
+							<span>RapidSMS</span>
+						</a>
+					</h1>
+				</div>
+
+				
+				<div id="auth">
+					<a href="/account/logout/">Log out root</a>
+				</div>
+				
+				<ul id="tabs">
+
+                                       
+                                        <li class="app- active">
+					   <a href="/asthma_app/Home"><span>Home</span></a>
+					</li>
+					
+
+					<li class="app-">
+					    <a href="/asthma_app/Message_log"><span>Message log</span></a>
+					</li>
+				
+					<li class="app-">
+					    <a href="/asthma_app/Defaulters"><span>Defaulters Report</span></a>
+					</li>
+
+					<li class="app-">
+					    <a href="/asthma_app/Severity_Levels"><span>Severity Levels Report</span></a>
+					</li>
+
+					<li class="app-">
+					    <a href="/asthma_app/ER_and_Hospital"><span>ER and Hospital Report</span></a>
+					</li>
+
+								
+			</div>
+                                    
+			
+
+	
+<br><center>
+<table width=80%><tr><td id=H><b>AsthmaSMS: An Asthma Follow-up System using RapidSMS</b></td></tr>
+<tr><td id=b><p><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<p align="justify">RapidSMS developers from the Khartoum University Team have joined the Epidemiological Laboratory (EpiLab) a national NGO and public health research centre, in their efforts to improve levels of adherence to treatment of Asthma patients. Asthma is one of the world's most common long-term conditions where the International Union Against Tuberculosis and Lung Disease estimated in 2011 that there are 235 million people affected by Asthma in the world, many of those in middle and least income countries, and observes a rising incidence rate. Although prevalence data for Asthma is lacking, the Epilab has pioneered the Asthma Management System and conducted a series of studies on the burden of the disease. Some of the main findings include that Asthma is the third most common cause for hospitalisation in Sudan after Malaria and Pnemonia, and that the dominant majority pay the full costs for their asthma medicines and very few receive regular treatment from a single facility, that is, there is no overall asthma management plan. The RapidSMS-based system builds on EpiLab's efforts for using mobile phone to trace defaulters as well as the centre's extensive experience in promoting the understanding and management of asthma and other respiratory diseases in Sudan. <br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+The objective of AsthmaSMS is to provide real-time and cost effective capabilities for local health workers to trace defaulters, and for central disease control authorities to track disease. This will be achieved by reminding patients of follow-up appointments, a mechanism expected to reduce the burden of morbidity and mortality rates, and hospital spending as well as provide web-based capabilities for real time data gathering and analysis, combined with GIS spatial analysis, as well as provide functionality to send mass awareness messages about Asthma public health facilities to improve access to information on disease and available services.</p></p>
+</td></tr></table>
+</center><br>
+<div id="footer">
+<p class="rights">Copyright &copy; 2008 &#8211; 2010
+<a href="http://unicef.org">UNICEF</a> et al.<br />
+<a href="http://github.com/rapidsms/rapidsms">RapidSMS</a> is available under
+<a href="http://github.com/rapidsms/rapidsms/raw/master/LICENSE">the BSD license</a>.
+				</p>
+
+				<div class="footer-region">&bull; <a href="/export/database" class="db-export">Export to SQL</a>
+</div>
+			</div>
+			
+
+			
+		</div>
+	</body>
+</html>
+

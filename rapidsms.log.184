@@ -1,0 +1,117 @@
+[backend/att]: An exception occurred
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/RapidSMS-0.9.6a-py2.7.egg/rapidsms/router.py", line 127, in _start_backend
+    started = backend.start()
+  File "/usr/local/lib/python2.7/dist-packages/RapidSMS-0.9.6a-py2.7.egg/rapidsms/backends/gsm.py", line 159, in start
+    self.modem = pygsm.GsmModem(logger=self.gsm_log, **self.modem_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/pygsm/gsmmodem.py", line 126, in __init__
+    self.boot()
+  File "/usr/local/lib/python2.7/dist-packages/pygsm/gsmmodem.py", line 240, in boot
+    self.connect()
+  File "/usr/local/lib/python2.7/dist-packages/pygsm/gsmmodem.py", line 176, in connect
+    **self.device_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/pygsm/devicewrapper.py", line 33, in __init__
+    self.device = serial.Serial(*args, **kwargs)
+  File "/usr/lib/python2.7/dist-packages/serial/serialutil.py", line 260, in __init__
+    self.open()
+  File "/usr/lib/python2.7/dist-packages/serial/serialposix.py", line 276, in open
+    raise SerialException("could not open port %s: %s" % (self._port, msg))
+SerialException: could not open port /dev/ttyUSB0: [Errno 2] No such file or directory: '/dev/ttyUSB0'
+[router]: waiting 15 seconds before retrying
+[router]: starting backend
+[backend/att]: Connecting and booting via pyGSM...
+[backend/att]: debug: Booting
+[backend/att]: debug: Connecting
+[router]: caught exception in backend pyGSM: could not open port /dev/ttyUSB0: [Errno 2] No such file or directory: '/dev/ttyUSB0'
+[backend/att]: An exception occurred
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/RapidSMS-0.9.6a-py2.7.egg/rapidsms/router.py", line 127, in _start_backend
+    started = backend.start()
+  File "/usr/local/lib/python2.7/dist-packages/RapidSMS-0.9.6a-py2.7.egg/rapidsms/backends/gsm.py", line 159, in start
+    self.modem = pygsm.GsmModem(logger=self.gsm_log, **self.modem_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/pygsm/gsmmodem.py", line 126, in __init__
+    self.boot()
+  File "/usr/local/lib/python2.7/dist-packages/pygsm/gsmmodem.py", line 240, in boot
+    self.connect()
+  File "/usr/local/lib/python2.7/dist-packages/pygsm/gsmmodem.py", line 176, in connect
+    **self.device_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/pygsm/devicewrapper.py", line 33, in __init__
+    self.device = serial.Serial(*args, **kwargs)
+  File "/usr/lib/python2.7/dist-packages/serial/serialutil.py", line 260, in __init__
+    self.open()
+  File "/usr/lib/python2.7/dist-packages/serial/serialposix.py", line 276, in open
+    raise SerialException("could not open port %s: %s" % (self._port, msg))
+SerialException: could not open port /dev/ttyUSB0: [Errno 2] No such file or directory: '/dev/ttyUSB0'
+[router]: waiting 15 seconds before retrying
+[router]: Caught KeyboardInterrupt
+[router]: Stopping...
+[router]: returning from _start_backend
+[router]: backend <backend: message_tester> terminated normally
+[router]: Stopped
+[django.db.backends]: (0.000) SELECT `rapidsms_backend`.`name` FROM `rapidsms_backend`; args=()
+[django.db.backends]: (0.000) SELECT `rapidsms_app`.`module` FROM `rapidsms_app`; args=()
+[router]: Starting RapidSMS...
+[router]: starting backend
+[router]: starting backend
+[backend/att]: Connecting and booting via pyGSM...
+[backend/att]: debug: Booting
+[app/handlers]: Registered: EchoHandler, PingHandler
+[backend/att]: debug: Connecting
+[router]: Started
+[backend/att]: write: 'ATE0\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: write: 'AT+CMEE=1\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: write: 'AT+WIND=0\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'COMMAND NOT SUPPORT\r\n'
+[backend/att]: write: 'AT+CSMS=1\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: '+CSMS: 1,1,1\r\n'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: write: 'AT+CMGF=0\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: write: 'AT+CNMI=2,2,0,0,0\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: '+CMS ERROR: 303\r\n'
+[backend/att]: write: 'AT+CMGL=0\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: '+CMGL: 15,0,,157\r\n'
+[backend/att]: read: '07914299212070514408D0DA70DA0D0019310172618460218C05000300030106390632064A06320646062700200627064406450634062A06310643060C002006440644062A0645062A063900200628062E062F06450627062A00200632064A0646002006480636064506270646002006250633062A0645063106270631064A0629002006270644062E062F06450629002006280639062F0020064A06480645002000200034\r\n'
+[backend/att]: read: '+CMGL: 16,0,,157\r\n'
+[backend/att]: read: '07914299212070514408D0DA70DA0D0019310172618460218C050003000302002E00310031002E00320030003100330020062706440631062C062706210020062506310633062706440020063106330627064406290020064406440631064206450020003900390030003000200628062706440635064A063A06290020062706440622062A064A0629003A002006270644062506330645002006430627064506440627064B\r\n'
+[backend/att]: read: '+CMGL: 17,0,,101\r\n'
+[backend/att]: read: '07914299212070514408D0DA70DA0D00193101726184602154050003000303002A06460648063900200625062B06280627062A0020062706440634062E0635064A0629002A0631064206450020062706440625062B06280627062A002A0627064406390646064806270646002E\r\n'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: debug: Error parsing PDU: 07914299212070514408D0DA70DA0D0019310172618460218C05000300030106390632064A06320646062700200627064406450634062A06310643060C002006440644062A0645062A063900200628062E062F06450627062A00200632064A0646002006480636064506270646002006250633062A0645063106270631064A0629002006270644062E062F06450629002006280639062F0020064A06480645002000200034
+[backend/att]: debug: Error parsing PDU: 07914299212070514408D0DA70DA0D0019310172618460218C05000300030106390632064A06320646062700200627064406450634062A06310643060C002006440644062A0645062A063900200628062E062F06450627062A00200632064A0646002006480636064506270646002006250633062A0645063106270631064A0629002006270644062E062F06450629002006280639062F0020064A06480645002000200034
+[backend/att]: debug: Error parsing PDU: 07914299212070514408D0DA70DA0D0019310172618460218C050003000302002E00310031002E00320030003100330020062706440631062C062706210020062506310633062706440020063106330627064406290020064406440631064206450020003900390030003000200628062706440635064A063A06290020062706440622062A064A0629003A002006270644062506330645002006430627064506440627064B
+[backend/att]: debug: Error parsing PDU: 07914299212070514408D0DA70DA0D0019310172618460218C05000300030106390632064A06320646062700200627064406450634062A06310643060C002006440644062A0645062A063900200628062E062F06450627062A00200632064A0646002006480636064506270646002006250633062A0645063106270631064A0629002006270644062E062F06450629002006280639062F0020064A06480645002000200034
+[backend/att]: debug: Error parsing PDU: 07914299212070514408D0DA70DA0D0019310172618460218C050003000302002E00310031002E00320030003100330020062706440631062C062706210020062506310633062706440020063106330627064406290020064406440631064206450020003900390030003000200628062706440635064A063A06290020062706440622062A064A0629003A002006270644062506330645002006430627064506440627064B
+[backend/att]: debug: Error parsing PDU: 07914299212070514408D0DA70DA0D00193101726184602154050003000303002A06460648063900200625062B06280627062A0020062706440634062E0635064A0629002A0631064206450020062706440625062B06280627062A002A0627064406390646064806270646002E
+[backend/att]: debug: Booting
+[backend/att]: debug: Connecting
+[backend/att]: write: 'ATE0\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: write: 'AT+CMEE=1\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: write: 'AT+WIND=0\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'COMMAND NOT SUPPORT\r\n'
+[backend/att]: write: 'AT+CSMS=1\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: '+CSMS: 1,1,1\r\n'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: write: 'AT+CMGF=0\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: write: 'AT+CNMI=2,2,0,0,0\r'
+[backend/att]: read: '\r\n'

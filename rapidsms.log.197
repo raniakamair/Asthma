@@ -1,0 +1,166 @@
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: write: 'AT+CNMI=2,2,0,0,0\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: '+CMS ERROR: 303\r\n'
+[backend/att]: write: 'AT+CMGL=0\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: debug: Booting
+[backend/att]: debug: Connecting
+[backend/att]: write: 'ATE0\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: write: 'AT+CMEE=1\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: write: 'AT+WIND=0\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'COMMAND NOT SUPPORT\r\n'
+[router]: Caught KeyboardInterrupt
+[router]: Stopping...
+[backend/att]: debug: Disconnecting
+[backend/att]: write: 'AT+CSMS=1\r'
+[backend/att]: debug: Disconnecting
+[router]: caught exception in backend pyGSM: 'NoneType' object has no attribute 'write'
+[backend/att]: An exception occurred
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/RapidSMS-0.9.6a-py2.7.egg/rapidsms/router.py", line 127, in _start_backend
+    started = backend.start()
+  File "/usr/local/lib/python2.7/dist-packages/RapidSMS-0.9.6a-py2.7.egg/rapidsms/backends/gsm.py", line 160, in start
+    self.modem.boot()
+  File "/usr/local/lib/python2.7/dist-packages/pygsm/gsmmodem.py", line 243, in boot
+    self.set_modem_config()
+  File "/usr/local/lib/python2.7/dist-packages/pygsm/gsmmodem.py", line 219, in set_modem_config
+    self.command("AT+CSMS=1", raise_errors=False) # set SMS mode to phase 2+
+  File "/usr/local/lib/python2.7/dist-packages/pygsm/gsmmodem.py", line 346, in command
+    self._write(cmd + write_term)
+  File "/usr/local/lib/python2.7/dist-packages/pygsm/gsmmodem.py", line 267, in _write
+    self.device.write(str)
+AttributeError: 'NoneType' object has no attribute 'write'
+[router]: waiting 15 seconds before retrying
+[router]: returning from _start_backend
+[router]: backend <backend: message_tester> terminated normally
+[router]: Stopped
+[django.db.backends]: (0.001) SELECT `rapidsms_backend`.`name` FROM `rapidsms_backend`; args=()
+[django.db.backends]: (0.000) SELECT `rapidsms_app`.`module` FROM `rapidsms_app`; args=()
+[router]: Starting RapidSMS...
+[router]: starting backend
+[router]: starting backend
+[backend/att]: Connecting and booting via pyGSM...
+[backend/att]: debug: Booting
+[backend/att]: debug: Connecting
+[app/handlers]: Registered: EchoHandler, PingHandler
+[router]: Started
+[backend/att]: write: 'ATE0\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: write: 'AT+CMEE=1\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: write: 'AT+WIND=0\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'COMMAND NOT SUPPORT\r\n'
+[backend/att]: write: 'AT+CSMS=1\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: '+CSMS: 1,1,1\r\n'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: write: 'AT+CMGF=0\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: write: 'AT+CNMI=2,2,0,0,0\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: '+CMS ERROR: 303\r\n'
+[backend/att]: write: 'AT+CMGL=0\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: debug: Booting
+[backend/att]: debug: Connecting
+[backend/att]: write: 'ATE0\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: write: 'AT+CMEE=1\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: write: 'AT+WIND=0\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'COMMAND NOT SUPPORT\r\n'
+[backend/att]: write: 'AT+CSMS=1\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: '+CSMS: 1,1,1\r\n'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: write: 'AT+CMGF=0\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: write: 'AT+CNMI=2,2,0,0,0\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: '+CMS ERROR: 303\r\n'
+[backend/att]: write: 'AT+CMGL=0\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: Polling modem for messages
+[backend/att]: write: 'AT\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: write: 'AT+CMGL=0\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: Polling modem for messages
+[backend/att]: write: 'AT\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: write: 'AT+CMGL=0\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: Polling modem for messages
+[backend/att]: write: 'AT\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: write: 'AT+CMGL=0\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: Polling modem for messages
+[backend/att]: write: 'AT\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: write: 'AT+CMGL=0\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: Polling modem for messages
+[backend/att]: write: 'AT\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: write: 'AT+CMGL=0\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: '+CMGL: 14,0,,54\r\n'
+[backend/att]: read: '0791429921207082240C914219322642200000310172514385212732586CD6CAB56439568C25BBD15866966CC682C564339B4C4683C95832968C3563DD00\r\n'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[django.db.backends]: (0.001) SELECT `rapidsms_backend`.`id`, `rapidsms_backend`.`name` FROM `rapidsms_backend` WHERE `rapidsms_backend`.`name` = att ; args=('att',)
+[django.db.backends]: (0.000) SELECT `rapidsms_connection`.`id`, `rapidsms_connection`.`backend_id`, `rapidsms_connection`.`identity`, `rapidsms_connection`.`contact_id` FROM `rapidsms_connection` WHERE (`rapidsms_connection`.`identity` = +249123622402  AND `rapidsms_connection`.`backend_id` = 1 ); args=('+249123622402', 1)
+[django.db.backends]: (0.000) SELECT `rapidsms_backend`.`id`, `rapidsms_backend`.`name` FROM `rapidsms_backend` WHERE `rapidsms_backend`.`id` = 1 ; args=(1,)
+[router]: Incoming (+249123622402 via att): 2013-9-29,1,274,f,23,0123622402,2,2,3,7
+[router]: In filter phase
+[router]: In <app: asthma_app> app
+[router]: In <app: handlers> app
+[router]: In <app: ajax> app
+[router]: In <app: default> app
+[router]: In <app: messagelog> app
+[router]: In parse phase
+[router]: In <app: asthma_app> app
+[router]: In <app: handlers> app
+[router]: In <app: ajax> app
+[router]: In <app: default> app
+[router]: In <app: messagelog> app
+[django.db.backends]: (0.000) INSERT INTO `messagelog_message` (`contact_id`, `connection_id`, `direction`, `date`, `text`) VALUES (None, 1, I, 2013-10-27 15:35:08, 2013-9-29,1,274,f,23,0123622402,2,2,3,7); args=(None, 1, 'I', u'2013-10-27 15:35:08', u'2013-9-29,1,274,f,23,0123622402,2,2,3,7')
+[router]: In handle phase
+[router]: In <app: asthma_app> app
+[app/asthma_app]: got message 2013-9-29,1,274,f,23,0123622402,2,2,3,7
+[django.db.backends]: (0.001) SELECT (1) AS `a` FROM `asthma_app_patients` WHERE `asthma_app_patients`.`Patients_PK` = 1-274  LIMIT 1; args=(u'1-274',)
+[django.db.backends]: (0.000) INSERT INTO `asthma_app_patients` (`Patients_PK`, `Patient_ID`, `Centre_ID_id`, `Gender`, `Phone`, `Age`) VALUES (1-274, 274, 1, F, 0123622402, 23); args=(u'1-274', 274, 1, u'F', u'0123622402', 23)
+[django.db.backends]: (0.000) SELECT (1) AS `a` FROM `asthma_app_asthma_mgmt` WHERE `asthma_app_asthma_mgmt`.`Asthma_Mgmt_PK` = 1-274  LIMIT 1; args=(u'1-274',)
+[django.db.backends]: (0.000) INSERT INTO `asthma_app_asthma_mgmt` (`Asthma_Mgmt_PK`, `First_Date`, `Lung_Function`, `Severity_Level_id`, `Year_ER_Visits`, `Year_Hospital_Visits`, `Followup_Date`) VALUES (1-274, 2013-09-29, 2, 2, 3, 7, 2013-10-29); args=(u'1-274', '2013-09-29', 2, 2, 3, 7, '2013-10-29')
+[django.db.backends]: (0.001) INSERT INTO `asthma_app_date_by_week` (`Date_week`, `T_Msg_id`, `P_ID`) VALUES (2013-10-06, 2, 1-274); args=('2013-10-06', 2, u'1-274')
+[django.db.backends]: (0.000) INSERT INTO `asthma_app_date_by_week` (`Date_week`, `T_Msg_id`, `P_ID`) VALUES (2013-10-13, 2, 1-274); args=('2013-10-13', 2, u'1-274')

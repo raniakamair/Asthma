@@ -1,0 +1,152 @@
+[app/asthma_app]: got message rania alkadesa
+[app/asthma_app]: An exception occurred
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/RapidSMS-0.9.6a-py2.7.egg/rapidsms/router.py", line 378, in incoming
+    handled = func(msg)
+  File "/home/rania/Music/asthma/apps/asthma_app/app.py", line 79, in handle
+    CK = r[1] + "-" + r[2]
+IndexError: list index out of range
+[router]: In <app: handlers> app
+[router]: In <app: ajax> app
+[router]: In <app: default> app
+[router]: In <app: messagelog> app
+[router]: In default phase
+[router]: In <app: asthma_app> app
+[router]: In <app: handlers> app
+[router]: In <app: ajax> app
+[router]: In <app: default> app
+[router]: In <app: messagelog> app
+[router]: In cleanup phase
+[router]: In <app: asthma_app> app
+[router]: In <app: handlers> app
+[router]: In <app: ajax> app
+[router]: In <app: default> app
+[router]: In <app: messagelog> app
+[router]: Outgoing (+249123622402 via att): Sorry, RapidSMS could not understand your message.
+[router]: Out outgoing phase
+[router]: Out <app: messagelog> app
+[django.db.backends]: (0.000) INSERT INTO `messagelog_message` (`contact_id`, `connection_id`, `direction`, `date`, `text`) VALUES (None, 1, O, 2013-10-27 14:50:42, Sorry, RapidSMS could not understand your message.); args=(None, 1, 'O', u'2013-10-27 14:50:42', u'Sorry, RapidSMS could not understand your message.')
+[router]: Out <app: default> app
+[router]: Out <app: ajax> app
+[router]: Out <app: handlers> app
+[router]: Out <app: asthma_app> app
+[backend/att]: write: 'AT+CMGS=58\r'
+[backend/att]: read: '\r\n'
+[backend/att]: write: '0011000C914219322642200000AA32D3B75C9E6781A461789A3C6D4E41E3779D4D06B9DF7450DD4D2ECBE7F4B09B0CCABFEB7250BB3C9F87CF6517\x1a'
+[backend/att]: read: '\r\n'
+[backend/att]: read: '\r\n'
+[backend/att]: read: '+CMGS: 183\r\n'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: Polling modem for messages
+[backend/att]: write: 'AT\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: write: 'AT+CMGL=0\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: Polling modem for messages
+[backend/att]: write: 'AT\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: write: 'AT+CMGL=0\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: Polling modem for messages
+[backend/att]: write: 'AT\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: write: 'AT+CMGL=0\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: Polling modem for messages
+[backend/att]: write: 'AT\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: write: 'AT+CMGL=0\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: Polling modem for messages
+[backend/att]: write: 'AT\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: write: 'AT+CMGL=0\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: Polling modem for messages
+[backend/att]: write: 'AT\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: write: 'AT+CMGL=0\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: Polling modem for messages
+[backend/att]: write: 'AT\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: write: 'AT+CMGL=0\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: Polling modem for messages
+[backend/att]: write: 'AT\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: write: 'AT+CMGL=0\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: Polling modem for messages
+[backend/att]: write: 'AT\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: write: 'AT+CMGL=0\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: '+CMGL: 11,0,,54\r\n'
+[backend/att]: read: '0791429921207082240C914219322642200000310172412540212732586CD6CAB56438568C25BBC15866966CC682C562B899CC5693C15832568C3563DD00\r\n'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[django.db.backends]: (0.000) SELECT `rapidsms_backend`.`id`, `rapidsms_backend`.`name` FROM `rapidsms_backend` WHERE `rapidsms_backend`.`name` = att ; args=('att',)
+[django.db.backends]: (0.000) SELECT `rapidsms_connection`.`id`, `rapidsms_connection`.`backend_id`, `rapidsms_connection`.`identity`, `rapidsms_connection`.`contact_id` FROM `rapidsms_connection` WHERE (`rapidsms_connection`.`identity` = +249123622402  AND `rapidsms_connection`.`backend_id` = 1 ); args=('+249123622402', 1)
+[django.db.backends]: (0.000) SELECT `rapidsms_backend`.`id`, `rapidsms_backend`.`name` FROM `rapidsms_backend` WHERE `rapidsms_backend`.`id` = 1 ; args=(1,)
+[router]: Incoming (+249123622402 via att): 2013-9-28,1,270,f,23,0118326520,2,1,3,7
+[router]: In filter phase
+[router]: In <app: asthma_app> app
+[router]: In <app: handlers> app
+[router]: In <app: ajax> app
+[router]: In <app: default> app
+[router]: In <app: messagelog> app
+[router]: In parse phase
+[router]: In <app: asthma_app> app
+[router]: In <app: handlers> app
+[router]: In <app: ajax> app
+[router]: In <app: default> app
+[router]: In <app: messagelog> app
+[django.db.backends]: (0.000) INSERT INTO `messagelog_message` (`contact_id`, `connection_id`, `direction`, `date`, `text`) VALUES (None, 1, I, 2013-10-27 14:52:14, 2013-9-28,1,270,f,23,0118326520,2,1,3,7); args=(None, 1, 'I', u'2013-10-27 14:52:14', u'2013-9-28,1,270,f,23,0118326520,2,1,3,7')
+[router]: In handle phase
+[router]: In <app: asthma_app> app
+[app/asthma_app]: got message 2013-9-28,1,270,f,23,0118326520,2,1,3,7
+[django.db.backends]: (0.000) SELECT (1) AS `a` FROM `asthma_app_patients` WHERE `asthma_app_patients`.`Patients_PK` = 1-270  LIMIT 1; args=(u'1-270',)
+[django.db.backends]: (0.000) INSERT INTO `asthma_app_patients` (`Patients_PK`, `Patient_ID`, `Centre_ID_id`, `Gender`, `Phone`, `Age`) VALUES (1-270, 270, 1, F, 0118326520, 23); args=(u'1-270', 270, 1, u'F', u'0118326520', 23)
+[django.db.backends]: (0.000) SELECT (1) AS `a` FROM `asthma_app_asthma_mgmt` WHERE `asthma_app_asthma_mgmt`.`Asthma_Mgmt_PK` = 1-270  LIMIT 1; args=(u'1-270',)
+[django.db.backends]: (0.000) INSERT INTO `asthma_app_asthma_mgmt` (`Asthma_Mgmt_PK`, `First_Date`, `Lung_Function`, `Severity_Level_id`, `Year_ER_Visits`, `Year_Hospital_Visits`, `Followup_Date`) VALUES (1-270, 2013-09-28, 2, 1, 3, 7, 2013-10-12); args=(u'1-270', '2013-09-28', 2, 1, 3, 7, '2013-10-12')
+[django.db.backends]: (0.000) INSERT INTO `asthma_app_date_by_week` (`Date_week`, `T_Msg_id`, `P_ID`) VALUES (2013-10-05, 1, 1-270); args=('2013-10-05', 1, u'1-270')
+[django.db.backends]: (0.000) INSERT INTO `asthma_app_date_by_week` (`Date_week`, `T_Msg_id`, `P_ID`) VALUES (2013-10-12, 1, 1-270); args=('2013-10-12', 1, u'1-270')
+[django.db.backends]: (0.000) INSERT INTO `asthma_app_date_by_week` (`Date_week`, `T_Msg_id`, `P_ID`) VALUES (2013-10-19, 1, 1-270); args=('2013-10-19', 1, u'1-270')
+[django.db.backends]: (0.001) INSERT INTO `asthma_app_date_by_week` (`Date_week`, `T_Msg_id`, `P_ID`) VALUES (2013-10-26, 1, 1-270); args=('2013-10-26', 1, u'1-270')
+[app/asthma_app]: responding with Your Message was recieved successfully
+[router]: Short-circuited
+[router]: In default phase
+[router]: Skipping phase
+[router]: Outgoing (+249123622402 via att): Your Message was recieved successfully
+[router]: Out outgoing phase
+[router]: Out <app: messagelog> app
+[django.db.backends]: (0.001) INSERT INTO `messagelog_message` (`contact_id`, `connection_id`, `direction`, `date`, `text`) VALUES (None, 1, O, 2013-10-27 14:52:15, Your Message was recieved successfully); args=(None, 1, 'O', u'2013-10-27 14:52:15', u'Your Message was recieved successfully')
+[router]: Out <app: default> app
+[router]: Out <app: ajax> app
+[router]: Out <app: handlers> app
+[router]: Out <app: asthma_app> app
+[backend/att]: write: 'AT+CMGS=48\r'
+[backend/att]: read: '\r\n'
+[backend/att]: write: '0011000C914219322642200000AA26D9775D0E6A96E7F3F0B90CBA87E72079799C2EDBCB64D0BC3E1E97E773739DCDCE03\x1a'
+[backend/att]: read: '\r\n'
+[backend/att]: read: '\r\n'
+[backend/att]: read: '+CMGS: 184\r\n'

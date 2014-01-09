@@ -1,0 +1,174 @@
+[router]: backend <backend: message_tester> terminated normally
+[router]: Stopped
+[django.db.backends]: (0.000) SELECT `rapidsms_backend`.`name` FROM `rapidsms_backend`; args=()
+[django.db.backends]: (0.000) SELECT `rapidsms_app`.`module` FROM `rapidsms_app`; args=()
+[router]: Starting RapidSMS...
+[router]: starting backend
+[router]: starting backend
+[backend/att]: Connecting and booting via pyGSM...
+[backend/att]: debug: Booting
+[backend/att]: debug: Connecting
+[app/handlers]: Registered: EchoHandler, PingHandler
+[backend/att]: write: 'ATE0\r'
+[router]: Started
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: write: 'AT+CMEE=1\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: write: 'AT+WIND=0\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'COMMAND NOT SUPPORT\r\n'
+[backend/att]: write: 'AT+CSMS=1\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: '+CSMS: 1,1,1\r\n'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: write: 'AT+CMGF=0\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: write: 'AT+CNMI=2,2,0,0,0\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: '+CMS ERROR: 303\r\n'
+[backend/att]: write: 'AT+CMGL=0\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: debug: Booting
+[backend/att]: debug: Connecting
+[backend/att]: write: 'ATE0\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: write: 'AT+CMEE=1\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: write: 'AT+WIND=0\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'COMMAND NOT SUPPORT\r\n'
+[router]: Caught KeyboardInterrupt
+[router]: Stopping...
+[backend/att]: debug: Disconnecting
+[backend/att]: write: 'AT+CSMS=1\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: '+CSMS: 1,1,1\r\n'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: write: 'AT+CMGF=0\r'
+[backend/att]: debug: Disconnecting
+[router]: caught exception in backend pyGSM: 'NoneType' object has no attribute 'write'
+[backend/att]: An exception occurred
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/RapidSMS-0.9.6a-py2.7.egg/rapidsms/router.py", line 127, in _start_backend
+    started = backend.start()
+  File "/usr/local/lib/python2.7/dist-packages/RapidSMS-0.9.6a-py2.7.egg/rapidsms/backends/gsm.py", line 160, in start
+    self.modem.boot()
+  File "/usr/local/lib/python2.7/dist-packages/pygsm/gsmmodem.py", line 243, in boot
+    self.set_modem_config()
+  File "/usr/local/lib/python2.7/dist-packages/pygsm/gsmmodem.py", line 220, in set_modem_config
+    self.command(self.smshandler.get_mode_cmd()      ) # make sure in PDU mode
+  File "/usr/local/lib/python2.7/dist-packages/pygsm/gsmmodem.py", line 346, in command
+    self._write(cmd + write_term)
+  File "/usr/local/lib/python2.7/dist-packages/pygsm/gsmmodem.py", line 267, in _write
+    self.device.write(str)
+AttributeError: 'NoneType' object has no attribute 'write'
+[router]: waiting 15 seconds before retrying
+[router]: returning from _start_backend
+[router]: backend <backend: message_tester> terminated normally
+[router]: Stopped
+[django.db.backends]: (0.000) SELECT `rapidsms_backend`.`name` FROM `rapidsms_backend`; args=()
+[django.db.backends]: (0.000) SELECT `rapidsms_app`.`module` FROM `rapidsms_app`; args=()
+[router]: Starting RapidSMS...
+[router]: starting backend
+[router]: starting backend
+[backend/att]: Connecting and booting via pyGSM...
+[backend/att]: debug: Booting
+[backend/att]: debug: Connecting
+[app/handlers]: Registered: EchoHandler, PingHandler
+[backend/att]: write: 'ATE0\r'
+[router]: Started
+[backend/att]: write: 'AT+CMEE=1\r'
+[backend/att]: write: 'AT+WIND=0\r'
+[backend/att]: write: 'AT+CSMS=1\r'
+[backend/att]: write: 'AT+CMGF=0\r'
+[router]: caught exception in backend pyGSM: 
+[backend/att]: An exception occurred
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/RapidSMS-0.9.6a-py2.7.egg/rapidsms/router.py", line 127, in _start_backend
+    started = backend.start()
+  File "/usr/local/lib/python2.7/dist-packages/RapidSMS-0.9.6a-py2.7.egg/rapidsms/backends/gsm.py", line 159, in start
+    self.modem = pygsm.GsmModem(logger=self.gsm_log, **self.modem_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/pygsm/gsmmodem.py", line 126, in __init__
+    self.boot()
+  File "/usr/local/lib/python2.7/dist-packages/pygsm/gsmmodem.py", line 243, in boot
+    self.set_modem_config()
+  File "/usr/local/lib/python2.7/dist-packages/pygsm/gsmmodem.py", line 220, in set_modem_config
+    self.command(self.smshandler.get_mode_cmd()      ) # make sure in PDU mode
+  File "/usr/local/lib/python2.7/dist-packages/pygsm/gsmmodem.py", line 375, in command
+    raise(err)
+GsmReadTimeoutError
+[router]: waiting 15 seconds before retrying
+[router]: Caught KeyboardInterrupt
+[router]: Stopping...
+[router]: returning from _start_backend
+[router]: backend <backend: message_tester> terminated normally
+[router]: Stopped
+[django.db.backends]: (0.000) SELECT `rapidsms_backend`.`name` FROM `rapidsms_backend`; args=()
+[django.db.backends]: (0.000) SELECT `rapidsms_app`.`module` FROM `rapidsms_app`; args=()
+[router]: Starting RapidSMS...
+[router]: starting backend
+[backend/att]: Connecting and booting via pyGSM...
+[backend/att]: debug: Booting
+[backend/att]: debug: Connecting
+[router]: starting backend
+[backend/att]: write: 'ATE0\r'
+[app/handlers]: Registered: EchoHandler, PingHandler
+[router]: Started
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: write: 'AT+CMEE=1\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: write: 'AT+WIND=0\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'COMMAND NOT SUPPORT\r\n'
+[router]: Caught KeyboardInterrupt
+[router]: Stopping...
+[router]: caught exception in backend pyGSM: device reports readiness to read but returned no data (device disconnected?)
+[backend/att]: An exception occurred
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/RapidSMS-0.9.6a-py2.7.egg/rapidsms/router.py", line 127, in _start_backend
+    started = backend.start()
+  File "/usr/local/lib/python2.7/dist-packages/RapidSMS-0.9.6a-py2.7.egg/rapidsms/backends/gsm.py", line 159, in start
+    self.modem = pygsm.GsmModem(logger=self.gsm_log, **self.modem_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/pygsm/gsmmodem.py", line 126, in __init__
+    self.boot()
+  File "/usr/local/lib/python2.7/dist-packages/pygsm/gsmmodem.py", line 243, in boot
+    self.set_modem_config()
+  File "/usr/local/lib/python2.7/dist-packages/pygsm/gsmmodem.py", line 218, in set_modem_config
+    self.command("AT+WIND=0", raise_errors=False) # disable notifications
+  File "/usr/local/lib/python2.7/dist-packages/pygsm/gsmmodem.py", line 349, in command
+    read_timeout=read_timeout)
+  File "/usr/local/lib/python2.7/dist-packages/pygsm/devicewrapper.py", line 102, in read_lines
+    read_timeout=read_timeout)
+  File "/usr/local/lib/python2.7/dist-packages/pygsm/devicewrapper.py", line 71, in _read
+    buf = self.device.read()
+  File "/usr/lib/python2.7/dist-packages/serial/serialposix.py", line 456, in read
+    raise SerialException('device reports readiness to read but returned no data (device disconnected?)')
+SerialException: device reports readiness to read but returned no data (device disconnected?)
+[router]: waiting 15 seconds before retrying
+[router]: returning from _start_backend
+[router]: backend <backend: message_tester> terminated normally
+[router]: Stopped
+[django.db.backends]: (0.000) SELECT `rapidsms_backend`.`name` FROM `rapidsms_backend`; args=()
+[django.db.backends]: (0.000) SELECT `rapidsms_app`.`module` FROM `rapidsms_app`; args=()
+[router]: Starting RapidSMS...
+[router]: starting backend
+[router]: starting backend
+[backend/att]: Connecting and booting via pyGSM...
+[backend/att]: debug: Booting
+[backend/att]: debug: Connecting
+[app/handlers]: Registered: EchoHandler, PingHandler
+[router]: Started
+[backend/att]: write: 'ATE0\r'
+[backend/att]: write: 'AT+CMEE=1\r'
+[router]: Caught KeyboardInterrupt
+[router]: Stopping...

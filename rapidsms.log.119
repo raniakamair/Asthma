@@ -1,0 +1,130 @@
+[backend/att]: An exception occurred
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/RapidSMS-0.9.6a-py2.7.egg/rapidsms/router.py", line 127, in _start_backend
+    started = backend.start()
+  File "/usr/local/lib/python2.7/dist-packages/RapidSMS-0.9.6a-py2.7.egg/rapidsms/backends/gsm.py", line 159, in start
+    self.modem = pygsm.GsmModem(logger=self.gsm_log, **self.modem_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/pygsm/gsmmodem.py", line 126, in __init__
+    self.boot()
+  File "/usr/local/lib/python2.7/dist-packages/pygsm/gsmmodem.py", line 240, in boot
+    self.connect()
+  File "/usr/local/lib/python2.7/dist-packages/pygsm/gsmmodem.py", line 176, in connect
+    **self.device_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/pygsm/devicewrapper.py", line 33, in __init__
+    self.device = serial.Serial(*args, **kwargs)
+  File "/usr/lib/python2.7/dist-packages/serial/serialutil.py", line 260, in __init__
+    self.open()
+  File "/usr/lib/python2.7/dist-packages/serial/serialposix.py", line 276, in open
+    raise SerialException("could not open port %s: %s" % (self._port, msg))
+SerialException: could not open port /dev/ttyUSB0: [Errno 2] No such file or directory: '/dev/ttyUSB0'
+[router]: waiting 15 seconds before retrying
+[router]: starting backend
+[backend/att]: Connecting and booting via pyGSM...
+[backend/att]: debug: Booting
+[backend/att]: debug: Connecting
+[backend/att]: debug: Disconnecting
+[router]: caught exception in backend pyGSM: could not open port /dev/ttyUSB0: [Errno 2] No such file or directory: '/dev/ttyUSB0'
+[backend/att]: An exception occurred
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/RapidSMS-0.9.6a-py2.7.egg/rapidsms/router.py", line 127, in _start_backend
+    started = backend.start()
+  File "/usr/local/lib/python2.7/dist-packages/RapidSMS-0.9.6a-py2.7.egg/rapidsms/backends/gsm.py", line 159, in start
+    self.modem = pygsm.GsmModem(logger=self.gsm_log, **self.modem_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/pygsm/gsmmodem.py", line 126, in __init__
+    self.boot()
+  File "/usr/local/lib/python2.7/dist-packages/pygsm/gsmmodem.py", line 240, in boot
+    self.connect()
+  File "/usr/local/lib/python2.7/dist-packages/pygsm/gsmmodem.py", line 176, in connect
+    **self.device_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/pygsm/devicewrapper.py", line 33, in __init__
+    self.device = serial.Serial(*args, **kwargs)
+  File "/usr/lib/python2.7/dist-packages/serial/serialutil.py", line 260, in __init__
+    self.open()
+  File "/usr/lib/python2.7/dist-packages/serial/serialposix.py", line 276, in open
+    raise SerialException("could not open port %s: %s" % (self._port, msg))
+SerialException: could not open port /dev/ttyUSB0: [Errno 2] No such file or directory: '/dev/ttyUSB0'
+[router]: waiting 15 seconds before retrying
+[router]: starting backend
+[backend/att]: Connecting and booting via pyGSM...
+[backend/att]: debug: Booting
+[backend/att]: debug: Connecting
+[backend/att]: debug: Disconnecting
+[router]: caught exception in backend pyGSM: could not open port /dev/ttyUSB0: [Errno 2] No such file or directory: '/dev/ttyUSB0'
+[backend/att]: An exception occurred
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/RapidSMS-0.9.6a-py2.7.egg/rapidsms/router.py", line 127, in _start_backend
+    started = backend.start()
+  File "/usr/local/lib/python2.7/dist-packages/RapidSMS-0.9.6a-py2.7.egg/rapidsms/backends/gsm.py", line 159, in start
+    self.modem = pygsm.GsmModem(logger=self.gsm_log, **self.modem_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/pygsm/gsmmodem.py", line 126, in __init__
+    self.boot()
+  File "/usr/local/lib/python2.7/dist-packages/pygsm/gsmmodem.py", line 240, in boot
+    self.connect()
+  File "/usr/local/lib/python2.7/dist-packages/pygsm/gsmmodem.py", line 176, in connect
+    **self.device_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/pygsm/devicewrapper.py", line 33, in __init__
+    self.device = serial.Serial(*args, **kwargs)
+  File "/usr/lib/python2.7/dist-packages/serial/serialutil.py", line 260, in __init__
+    self.open()
+  File "/usr/lib/python2.7/dist-packages/serial/serialposix.py", line 276, in open
+    raise SerialException("could not open port %s: %s" % (self._port, msg))
+SerialException: could not open port /dev/ttyUSB0: [Errno 2] No such file or directory: '/dev/ttyUSB0'
+[router]: waiting 15 seconds before retrying
+[router]: starting backend
+[backend/att]: Connecting and booting via pyGSM...
+[backend/att]: debug: Booting
+[backend/att]: debug: Connecting
+[backend/att]: debug: Disconnecting
+[router]: caught exception in backend pyGSM: could not open port /dev/ttyUSB0: [Errno 2] No such file or directory: '/dev/ttyUSB0'
+[backend/att]: An exception occurred
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/RapidSMS-0.9.6a-py2.7.egg/rapidsms/router.py", line 127, in _start_backend
+    started = backend.start()
+  File "/usr/local/lib/python2.7/dist-packages/RapidSMS-0.9.6a-py2.7.egg/rapidsms/backends/gsm.py", line 159, in start
+    self.modem = pygsm.GsmModem(logger=self.gsm_log, **self.modem_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/pygsm/gsmmodem.py", line 126, in __init__
+    self.boot()
+  File "/usr/local/lib/python2.7/dist-packages/pygsm/gsmmodem.py", line 240, in boot
+    self.connect()
+  File "/usr/local/lib/python2.7/dist-packages/pygsm/gsmmodem.py", line 176, in connect
+    **self.device_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/pygsm/devicewrapper.py", line 33, in __init__
+    self.device = serial.Serial(*args, **kwargs)
+  File "/usr/lib/python2.7/dist-packages/serial/serialutil.py", line 260, in __init__
+    self.open()
+  File "/usr/lib/python2.7/dist-packages/serial/serialposix.py", line 276, in open
+    raise SerialException("could not open port %s: %s" % (self._port, msg))
+SerialException: could not open port /dev/ttyUSB0: [Errno 2] No such file or directory: '/dev/ttyUSB0'
+[router]: waiting 15 seconds before retrying
+[router]: starting backend
+[backend/att]: Connecting and booting via pyGSM...
+[backend/att]: debug: Booting
+[backend/att]: debug: Connecting
+[backend/att]: debug: Disconnecting
+[router]: caught exception in backend pyGSM: could not open port /dev/ttyUSB0: [Errno 2] No such file or directory: '/dev/ttyUSB0'
+[backend/att]: An exception occurred
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/RapidSMS-0.9.6a-py2.7.egg/rapidsms/router.py", line 127, in _start_backend
+    started = backend.start()
+  File "/usr/local/lib/python2.7/dist-packages/RapidSMS-0.9.6a-py2.7.egg/rapidsms/backends/gsm.py", line 159, in start
+    self.modem = pygsm.GsmModem(logger=self.gsm_log, **self.modem_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/pygsm/gsmmodem.py", line 126, in __init__
+    self.boot()
+  File "/usr/local/lib/python2.7/dist-packages/pygsm/gsmmodem.py", line 240, in boot
+    self.connect()
+  File "/usr/local/lib/python2.7/dist-packages/pygsm/gsmmodem.py", line 176, in connect
+    **self.device_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/pygsm/devicewrapper.py", line 33, in __init__
+    self.device = serial.Serial(*args, **kwargs)
+  File "/usr/lib/python2.7/dist-packages/serial/serialutil.py", line 260, in __init__
+    self.open()
+  File "/usr/lib/python2.7/dist-packages/serial/serialposix.py", line 276, in open
+    raise SerialException("could not open port %s: %s" % (self._port, msg))
+SerialException: could not open port /dev/ttyUSB0: [Errno 2] No such file or directory: '/dev/ttyUSB0'
+[router]: waiting 15 seconds before retrying
+[router]: starting backend
+[backend/att]: Connecting and booting via pyGSM...
+[backend/att]: debug: Booting
+[backend/att]: debug: Connecting
+[backend/att]: debug: Disconnecting
+[router]: caught exception in backend pyGSM: could not open port /dev/ttyUSB0: [Errno 2] No such file or directory: '/dev/ttyUSB0'

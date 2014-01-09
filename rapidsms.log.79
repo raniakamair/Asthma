@@ -1,0 +1,199 @@
+[router]: starting backend
+[backend/att]: Connecting and booting via pyGSM...
+[app/handlers]: Registered: EchoHandler, PingHandler
+[backend/att]: debug: Booting
+[backend/att]: debug: Connecting
+[router]: Started
+[backend/att]: write: 'ATE0\r'
+[router]: caught exception in backend pyGSM: [Errno 11] Resource temporarily unavailable
+[backend/att]: An exception occurred
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/RapidSMS-0.9.6a-py2.7.egg/rapidsms/router.py", line 127, in _start_backend
+    started = backend.start()
+  File "/usr/local/lib/python2.7/dist-packages/RapidSMS-0.9.6a-py2.7.egg/rapidsms/backends/gsm.py", line 159, in start
+    self.modem = pygsm.GsmModem(logger=self.gsm_log, **self.modem_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/pygsm/gsmmodem.py", line 126, in __init__
+    self.boot()
+  File "/usr/local/lib/python2.7/dist-packages/pygsm/gsmmodem.py", line 243, in boot
+    self.set_modem_config()
+  File "/usr/local/lib/python2.7/dist-packages/pygsm/gsmmodem.py", line 216, in set_modem_config
+    self.command("ATE0",      raise_errors=False) # echo off
+  File "/usr/local/lib/python2.7/dist-packages/pygsm/gsmmodem.py", line 349, in command
+    read_timeout=read_timeout)
+  File "/usr/local/lib/python2.7/dist-packages/pygsm/devicewrapper.py", line 102, in read_lines
+    read_timeout=read_timeout)
+  File "/usr/local/lib/python2.7/dist-packages/pygsm/devicewrapper.py", line 71, in _read
+    buf = self.device.read()
+  File "/usr/lib/python2.7/dist-packages/serial/serialposix.py", line 449, in read
+    buf = os.read(self.fd, size-len(read))
+OSError: [Errno 11] Resource temporarily unavailable
+[router]: waiting 15 seconds before retrying
+[router]: Caught KeyboardInterrupt
+[router]: Stopping...
+[router]: returning from _start_backend
+[router]: backend <backend: message_tester> terminated normally
+[router]: Stopped
+[django.db.backends]: (0.001) SELECT `rapidsms_backend`.`name` FROM `rapidsms_backend`; args=()
+[django.db.backends]: (0.000) SELECT `rapidsms_app`.`module` FROM `rapidsms_app`; args=()
+[router]: Starting RapidSMS...
+[router]: starting backend
+[backend/att]: Connecting and booting via pyGSM...
+[router]: starting backend
+[backend/att]: debug: Booting
+[backend/att]: debug: Connecting
+[app/handlers]: Registered: EchoHandler, PingHandler
+[backend/att]: write: 'ATE0\r'
+[router]: Started
+[backend/att]: read: '\rO\r\n'
+[router]: Caught KeyboardInterrupt
+[router]: Stopping...
+[django.db.backends]: (0.001) SELECT `rapidsms_backend`.`name` FROM `rapidsms_backend`; args=()
+[django.db.backends]: (0.000) SELECT `rapidsms_app`.`module` FROM `rapidsms_app`; args=()
+[router]: Starting RapidSMS...
+[router]: starting backend
+[router]: starting backend
+[backend/att]: Connecting and booting via pyGSM...
+[backend/att]: debug: Booting
+[app/handlers]: Registered: EchoHandler, PingHandler
+[backend/att]: debug: Connecting
+[backend/att]: write: 'ATE0\r'
+[router]: Started
+[backend/att]: read: '\r\n'
+[backend/att]: read: '\r+SS ,1,1\r\n'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: write: 'AT+CMEE=1\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: write: 'AT+WIND=0\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'COMMAND NOT SUPPORT\r\n'
+[backend/att]: write: 'AT+CSMS=1\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: '+CSMS: 1,1,1\r\n'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: write: 'AT+CMGF=0\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: write: 'AT+CNMI=2,2,0,0,0\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: '+CMS ERROR: 303\r\n'
+[backend/att]: write: 'AT+CMGL=0\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: debug: Booting
+[backend/att]: debug: Connecting
+[backend/att]: write: 'ATE0\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: write: 'AT+CMEE=1\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: write: 'AT+WIND=0\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'COMMAND NOT SUPPORT\r\n'
+[backend/att]: write: 'AT+CSMS=1\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: '+CSMS: 1,1,1\r\n'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: write: 'AT+CMGF=0\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: write: 'AT+CNMI=2,2,0,0,0\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: '+CMS ERROR: 303\r\n'
+[backend/att]: write: 'AT+CMGL=0\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: Polling modem for messages
+[backend/att]: write: 'AT\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: write: 'AT+CMGL=0\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: Polling modem for messages
+[backend/att]: write: 'AT\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: write: 'AT+CMGL=0\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: Polling modem for messages
+[backend/att]: write: 'AT\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: write: 'AT+CMGL=0\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: Polling modem for messages
+[backend/att]: write: 'AT\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: write: 'AT+CMGL=0\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: Polling modem for messages
+[backend/att]: write: 'AT\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: write: 'AT+CMGL=0\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: Polling modem for messages
+[backend/att]: write: 'AT\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: write: 'AT+CMGL=0\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: Polling modem for messages
+[backend/att]: write: 'AT\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: write: 'AT+CMGL=0\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: '+CME ERROR: 13\r\n'
+[backend/att]: debug: Disconnecting
+[router]: caught exception in backend pyGSM: CME ERROR 13: SIM failure
+[backend/att]: An exception occurred
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/RapidSMS-0.9.6a-py2.7.egg/rapidsms/router.py", line 127, in _start_backend
+    started = backend.start()
+  File "/usr/local/lib/python2.7/dist-packages/RapidSMS-0.9.6a-py2.7.egg/rapidsms/backends/gsm.py", line 167, in start
+    BackendBase.start(self)
+  File "/usr/local/lib/python2.7/dist-packages/RapidSMS-0.9.6a-py2.7.egg/rapidsms/backends/base.py", line 51, in start
+    self.run()
+  File "/usr/local/lib/python2.7/dist-packages/RapidSMS-0.9.6a-py2.7.egg/rapidsms/backends/gsm.py", line 132, in run
+    msg = self.modem.next_message()
+  File "/usr/local/lib/python2.7/dist-packages/pygsm/gsmmodem.py", line 568, in next_message
+    self._fetch_stored_messages()
+  File "/usr/local/lib/python2.7/dist-packages/pygsm/gsmmodem.py", line 545, in _fetch_stored_messages
+    lines = self.command('AT+CMGL=%s' % self.smshandler.CMGL_STATUS)
+  File "/usr/local/lib/python2.7/dist-packages/pygsm/gsmmodem.py", line 375, in command
+    raise(err)
+GsmModemError: CME ERROR 13: SIM failure
+[router]: waiting 15 seconds before retrying
+[router]: starting backend
+[backend/att]: Connecting and booting via pyGSM...
+[backend/att]: debug: Booting
+[backend/att]: debug: Connecting
+[backend/att]: write: 'ATE0\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: write: 'AT+CMEE=1\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: write: 'AT+WIND=0\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'COMMAND NOT SUPPORT\r\n'
+[backend/att]: write: 'AT+CSMS=1\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: '+CME ERROR: 13\r\n'
+[backend/att]: write: 'AT+CMGF=0\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: '+CME ERROR: 13\r\n'
+[backend/att]: debug: Disconnecting
+[router]: caught exception in backend pyGSM: CME ERROR 13: SIM failure
